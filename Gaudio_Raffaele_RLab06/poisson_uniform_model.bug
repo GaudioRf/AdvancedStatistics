@@ -1,0 +1,11 @@
+
+    model{
+        #data likelihood
+        for(i in 1:length(X)){
+            X[i] ~ dpois(lambda)
+        }
+        
+        #beta prior
+        lambda ~ dexp(1e-6)
+        
+    }

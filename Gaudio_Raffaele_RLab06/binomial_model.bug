@@ -1,0 +1,9 @@
+
+    model{
+        #data likelihood
+        X ~ dbin(p,n)
+        
+        #beta prior
+        p ~ dbeta(a,b)
+        
+    }
